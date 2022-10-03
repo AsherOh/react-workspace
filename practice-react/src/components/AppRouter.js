@@ -1,9 +1,13 @@
 import React from 'react';
 
-const AppRouter = () => {
+const AppRouter = ({ isLoggedIn, setIsLoggedIn }) => {
     return (
         <>
-            
+            {/* <Router>
+                <Route>
+                    
+                </Route>
+            </Router> */}
         </>
     );
 };
