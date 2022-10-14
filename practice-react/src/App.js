@@ -9,6 +9,8 @@ function App() {
     <ThemeContext.Provider value={{ isLoggedIn, setIsLoggedIn }}>
       <div className="App">
         <button>Clicked</button>
+        <p>Hi</p>
+        <button>Hello</button>
       </div>
     </ThemeContext.Provider>
   );
