@@ -7,9 +7,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ isLoggedIn, setIsLoggedIn }}>
-      <div className="App">
-        <button>Clicked</button>
-      </div>
+      <div className="App"></div>
     </ThemeContext.Provider>
   );
 }
