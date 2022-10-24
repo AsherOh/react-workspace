@@ -1,5 +1,15 @@
 import React, { useCallback, useState } from "react";
-import { Button, CssBaseline, TextField, FormControl, FormHelperText, Grid, Box, Typography, Container } from "@mui/material/";
+import {
+  Button,
+  CssBaseline,
+  TextField,
+  FormControl,
+  FormHelperText,
+  Grid,
+  Box,
+  Typography,
+  Container,
+} from "@mui/material/";
 import Header from "../components/Header";
 import styled from "styled-components";
 
@@ -11,7 +21,7 @@ const FormHelperTexts = styled(FormHelperText)`
 `;
 
 const Boxs = styled(Box)`
-  padding-bottom: 40px !important;
+  // padding-bottom: 40px !important;
 `;
 
 const SignUp = () => {
@@ -48,7 +58,8 @@ const SignUp = () => {
       if (!idRegex.test(id) || id.length < 1)
         setErrors({
           ...errors,
-          idError: "숫자, 알파벳 및 숫자와 관련된 특수문자 조합의 올바른 아이디를 입력해주세요. 글자수 제한[4~20]",
+          idError:
+            "숫자, 알파벳 및 숫자와 관련된 특수문자 조합의 올바른 아이디를 입력해주세요. 글자수 제한[4~20]",
         });
       else
         setErrors({
@@ -67,7 +78,8 @@ const SignUp = () => {
   // Email 유효성 관리
   const onChangeEmail = useCallback(
     (e) => {
-      const emailRegex = /([\w-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+      const emailRegex =
+        /([\w-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
       const { value, name } = e.target;
       setInputs({
         ...inputs,
@@ -249,7 +261,15 @@ const SignUp = () => {
                 </Grid>
                 <FormHelperTexts>{errors.passwordConfirmError}</FormHelperTexts>
               </Grid>
-              <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2, bgcolor: "#383b3d" }} size="large" style={{ height: "5.5vh" }} disabled={!(isId && isEmail && isPassword && isPasswordConfirm)}>
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3, mb: 2, bgcolor: "#383b3d" }}
+                size="large"
+                style={{ height: "5.5vh" }}
+                disabled={!(isId && isEmail && isPassword && isPasswordConfirm)}
+              >
                 회원가입 완료
               </Button>
             </FormControl>
