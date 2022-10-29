@@ -21,7 +21,7 @@ const FormHelperTexts = styled(FormHelperText)`
 `;
 
 const Boxs = styled(Box)`
-  // padding-bottom: 40px !important;
+  padding-bottom: 40px !important;
 `;
 
 const SignUp = () => {
