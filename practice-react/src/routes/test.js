@@ -181,7 +181,6 @@ const SignUp = () => {
       passwordConfirm: data.get("passwordConfirm"),
     };
     const { id, email, password, rePassword } = joinData;
-    console.log(joinData);
   };
 
   const onPost = async (data) => {
