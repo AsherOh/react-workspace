@@ -218,7 +218,6 @@ const SignUp = () => {
                     onChange={onChangeId}
                     // error={errors.idError !== "" || false}
                   />
-                  <TextField />
                 </Grid>
                 <FormHelperTexts>{errors.idError}</FormHelperTexts>
                 <Grid item xs={12}>
