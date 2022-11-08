@@ -219,6 +219,7 @@ const SignUp = () => {
                     // error={errors.idError !== "" || false}
                   />
                 </Grid>
+                <Grid></Grid>
                 <FormHelperTexts>{errors.idError}</FormHelperTexts>
                 <Grid item xs={12}>
                   <TextField
