@@ -1,15 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const AppRouter = ({ isLoggedIn, setIsLoggedIn }) => {
-    return (
-        <>
-            <Router>
-                <Route>
-                    
-                </Route>
-            </Router>
-        </>
-    );
+const AppRouter = () => {
+  return (
+    <>
+      <Router>
+        <Route></Route>
+      </Router>
+    </>
+  );
 };
 
 export default AppRouter;
