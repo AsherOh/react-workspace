@@ -3,11 +3,11 @@ import React from 'react';
 const AppRouter = ({ isLoggedIn, setIsLoggedIn }) => {
     return (
         <>
-            {/* <Router>
+            <Router>
                 <Route>
                     
                 </Route>
-            </Router> */}
+            </Router>
         </>
     );
 };
