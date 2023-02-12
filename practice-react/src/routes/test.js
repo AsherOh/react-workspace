@@ -64,7 +64,7 @@ const SignUp = () => {
       else
         setErrors({
           ...errors,
-          idError: "올바른 아이디 형식입니다.",
+          idError: "올바른 아이디 형식입니다",
         });
       const { value, name } = e.target;
       setInputs({
@@ -97,7 +97,7 @@ const SignUp = () => {
       } else {
         setErrors({
           ...errors,
-          emailError: "올바른 이메일 형식입니다.",
+          emailError: "올바른 이메일 형식입니다",
         });
         setValidation({
           ...validation,
@@ -119,7 +119,7 @@ const SignUp = () => {
       if (!passwordRegex.test(password)) {
         setErrors({
           ...errors,
-          passwordError: "숫자+영문자+특수문자 조합으로 8자리 이상 입력해주세요.",
+          passwordError: "숫자+영문자+특수문자 조합으로 8자리 이상 입력해주세요",
         });
         setValidation({
           ...validation,
@@ -128,7 +128,7 @@ const SignUp = () => {
       } else {
         setErrors({
           ...errors,
-          passwordError: "안전한 비밀번호입니다.",
+          passwordError: "안전한 비밀번호입니다",
         });
         setValidation({
           ...validation,
@@ -149,7 +149,7 @@ const SignUp = () => {
       if (password === passwordConfirm) {
         setErrors({
           ...errors,
-          passwordConfirmError: "비밀번호를 똑같이 입력했어요.",
+          passwordConfirmError: "비밀번호를 똑같이 입력했어요",
         });
         setValidation({
           ...validation,
@@ -158,7 +158,7 @@ const SignUp = () => {
       } else {
         setErrors({
           ...errors,
-          passwordConfirmError: "비밀번호가 틀려요. 다시 확인해주세요.",
+          passwordConfirmError: "비밀번호가 틀려요. 다시 확인해주세요",
         });
         setValidation({
           ...validation,
