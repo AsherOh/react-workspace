@@ -183,9 +183,9 @@ const SignUp = () => {
     const { id, email, password, rePassword } = joinData;
   };
 
-  const onPost = async (data) => {
-    console.log("회원가입 포스트 정상 신청", data);
-  };
+  // const onPost = async (data) => {
+  //   console.log("회원가입 포스트 정상 신청", data);
+  // };
 
   return (
     <>
